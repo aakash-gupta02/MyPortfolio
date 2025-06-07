@@ -90,6 +90,7 @@ const About = () => {
               hosting solutions.
             </p>
           </div>
+
           <div className="bg-[#333] p-5 rounded-lg">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
@@ -101,6 +102,32 @@ const About = () => {
               Creating clean, accessible, responsive layouts, and optimized UIs.
             </p>
           </div>
+
+                  <div className="bg-[#333] p-5 rounded-lg">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
+                <i className="fas fa-code text-indigo-400"></i>
+              </div>
+              <h3 className="text-lg font-semibold">Web Development</h3>
+            </div>
+            <p className="text-gray-300">
+              Building dynamic, scalable full-stack apps using MERN & modern
+              hosting solutions.
+            </p>
+          </div>
+
+          <div className="bg-[#333] p-5 rounded-lg">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
+                <i className="fas fa-paint-brush text-indigo-400"></i>
+              </div>
+              <h3 className="text-lg font-semibold">UI & Code Optimization</h3>
+            </div>
+            <p className="text-gray-300">
+              Creating clean, accessible, responsive layouts, and optimized UIs.
+            </p>
+          </div>
+
         </div>
       </section>
     </div>

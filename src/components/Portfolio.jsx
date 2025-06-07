@@ -14,7 +14,7 @@ const Portfolio = () => {
       case "about":
         return <About />;
       case "resume":
-        return <Resume />;
+        return <Resume setActiveTab={setActiveTab}  />;
 
       case "projects":
         return <Projects />;
@@ -29,6 +29,8 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-[#1f1f1f] text-white font-['Inter',sans-serif] flex flex-col md:flex-row">
+
+
       {/* Left Sidebar */}
       <div className="md:w-64 lg:w-72 bg-[#222222] p-6 md:fixed md:h-screen md:overflow-y-auto">
         <div className="flex flex-col items-center text-center mb-6">
