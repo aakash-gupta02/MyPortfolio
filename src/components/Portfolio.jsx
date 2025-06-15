@@ -36,9 +36,9 @@ const Portfolio = () => {
         <div className="flex flex-col items-center text-center mb-6">
           <div className="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-indigo-500">
             <img
-              src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20male%20developer%20with%20glasses%2C%20cartoon%20style%2C%20dark%20blue%20background%2C%20minimalist%20design%2C%20professional%20looking%2C%20high%20quality%20digital%20art&width=300&height=300&seq=1&orientation=squarish"
+              src="https://i.postimg.cc/br5bhJ6R/91-98920-30814-20250615-190822-4.png"
               alt="Developer Portrait"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full bg-indigo-900 object-cover object-top"
             />
           </div>
           <h1 className="text-2xl font-bold mt-2">Aakash Gupta</h1>

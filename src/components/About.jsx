@@ -1,6 +1,35 @@
 import React from "react";
 
 const About = () => {
+
+  
+  const services = [
+    {
+      title: "Web Development",
+      icon: "fa-code",
+      description:
+        "Building dynamic, scalable full-stack apps using MERN, Python Django & modern hosting solutions.",
+    },
+    {
+      title: "UI & Code Optimization",
+      icon: "fa-paint-brush",
+      description:
+        "Creating clean, accessible, responsive layouts, and optimized UIs.",
+    },
+    {
+      title: "Python Data Analysis",
+      icon: "fa-chart-line",
+      description:
+        "Data processing, visualization, and machine learning using Python ecosystem.",
+    },
+    {
+      title: "UI/UX Design",
+      icon: "fa-object-group",
+      description:
+        "Pixel-perfect Figma designs, wireframing, and interactive prototypes.",
+    },
+  ];
+
   return (
     <div className="space-y-8">
       <section className="bg-[#2a2a2a] rounded-lg p-6 shadow-lg">
@@ -78,56 +107,17 @@ const About = () => {
       <section className="bg-[#2a2a2a] rounded-lg p-6 shadow-lg">
         <h2 className="text-xl font-bold mb-4">What I'm Doing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#333] p-5 rounded-lg">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
-                <i className="fas fa-code text-indigo-400"></i>
+          {services.map((service, index) => (
+            <div key={index} className="bg-[#333] p-5 rounded-lg">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
+                  <i className={`fas ${service.icon} text-indigo-400`}></i>
+                </div>
+                <h3 className="text-lg font-semibold">{service.title}</h3>
               </div>
-              <h3 className="text-lg font-semibold">Web Development</h3>
+              <p className="text-gray-300">{service.description}</p>
             </div>
-            <p className="text-gray-300">
-              Building dynamic, scalable full-stack apps using MERN & modern
-              hosting solutions.
-            </p>
-          </div>
-
-          <div className="bg-[#333] p-5 rounded-lg">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
-                <i className="fas fa-paint-brush text-indigo-400"></i>
-              </div>
-              <h3 className="text-lg font-semibold">UI & Code Optimization</h3>
-            </div>
-            <p className="text-gray-300">
-              Creating clean, accessible, responsive layouts, and optimized UIs.
-            </p>
-          </div>
-
-                  <div className="bg-[#333] p-5 rounded-lg">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
-                <i className="fas fa-code text-indigo-400"></i>
-              </div>
-              <h3 className="text-lg font-semibold">Web Development</h3>
-            </div>
-            <p className="text-gray-300">
-              Building dynamic, scalable full-stack apps using MERN & modern
-              hosting solutions.
-            </p>
-          </div>
-
-          <div className="bg-[#333] p-5 rounded-lg">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-900 flex items-center justify-center mr-3">
-                <i className="fas fa-paint-brush text-indigo-400"></i>
-              </div>
-              <h3 className="text-lg font-semibold">UI & Code Optimization</h3>
-            </div>
-            <p className="text-gray-300">
-              Creating clean, accessible, responsive layouts, and optimized UIs.
-            </p>
-          </div>
-
+          ))}
         </div>
       </section>
     </div>
