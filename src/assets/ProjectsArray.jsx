@@ -131,8 +131,8 @@ export const projects = [
     category: "React",
     image: "https://i.postimg.cc/3JvqyDgm/Screenshot-2025-05-07-211330.png",
     description:
-      "Find and display GitHub user profiles with repository information.",
-    technologies: ["React", "GitHub API", "Axios"],
+      "Find and display Trending Crypto Coins.",
+    technologies: ["React", "Coin Gecko API", "TanStack Query"],
     githubLink: "https://github.com/aakash-gupta02/Crypto-Palace",
     liveLink: "https://crypto-palace-ten.vercel.app/",
     images: [
@@ -141,9 +141,9 @@ export const projects = [
       "https://i.postimg.cc/3JvqyDgm/Screenshot-2025-05-07-211330.png",
     ],
     features: [
-      "User profile search",
-      "Repository listing",
-      "Stats visualization",
+      "Coin search",
+      "Coins listing",
+      "Coin visualization",
       "Responsive layout",
       "Error handling",
     ],
