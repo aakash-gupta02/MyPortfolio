@@ -97,7 +97,7 @@ const Connect = () => {
             </div>
             <div>
               <h3 className="font-semibold">Email</h3>
-              <p className="text-gray-400">alex.morgan@gmail.com</p>
+              <p className="text-gray-400">aakash254631@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center p-4 bg-[#333] rounded-lg">
@@ -106,7 +106,7 @@ const Connect = () => {
             </div>
             <div>
               <h3 className="font-semibold">Phone</h3>
-              <p className="text-gray-400">+1 (555) 123-4567</p>
+              <p className="text-gray-400">+91 8422725872</p>
             </div>
           </div>
           <div className="flex items-center p-4 bg-[#333] rounded-lg">
@@ -115,16 +115,16 @@ const Connect = () => {
             </div>
             <div>
               <h3 className="font-semibold">LinkedIn</h3>
-              <p className="text-gray-400">@alexmorgan</p>
+              <p className="text-gray-400">@aakashgupta</p>
             </div>
           </div>
           <div className="flex items-center p-4 bg-[#333] rounded-lg">
             <div className="w-10 h-10 bg-indigo-900 rounded-lg flex items-center justify-center mr-4">
-              <i className="fab fa-twitter text-indigo-400"></i>
+              <i className="fab fa-telegram text-indigo-400"></i>
             </div>
             <div>
-              <h3 className="font-semibold">Twitter</h3>
-              <p className="text-gray-400">@alexmorgandev</p>
+              <h3 className="font-semibold">Telegram</h3>
+              <p className="text-gray-400">@aakashgupta052004</p>
             </div>
           </div>
         </div>

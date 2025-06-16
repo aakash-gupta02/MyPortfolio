@@ -27,12 +27,11 @@ const Portfolio = () => {
     }
   };
 
-  return (
-    <div className="min-h-screen bg-[#1f1f1f] text-white font-['Inter',sans-serif] flex flex-col md:flex-row">
-
+return (
+    <div className="min-h-screen w-full bg-[#1f1f1f] text-white font-['Inter',sans-serif] flex flex-col md:flex-row overflow-x-hidden">
 
       {/* Left Sidebar */}
-      <div className="md:w-64 lg:w-72 bg-[#222222] p-6 md:fixed md:h-screen md:overflow-y-auto">
+      <div className="w-full md:w-64 lg:w-72 bg-[#222222] p-6 md:fixed md:h-screen md:overflow-y-auto">
         <div className="flex flex-col items-center text-center mb-6">
           <div className="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-indigo-500">
             <img
@@ -65,25 +64,25 @@ const Portfolio = () => {
         <div className="mt-8 flex justify-center space-x-4">
           <a
             href="https://github.com/aakash-gupta02"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer rounded-button"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer"
           >
             <i className="fab fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/aakash-gupta-5a337928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer rounded-button"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer"
           >
             <i className="fab fa-linkedin-in"></i>
           </a>
           <a
             href="https://www.instagram.com/aakash.grafix"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer rounded-button"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer"
           >
             <i className="fab fa-instagram"></i>
           </a>
           <a
             href="https://t.me/aakashgupta052004"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer rounded-button"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#2a2a2a] hover:bg-indigo-600 transition-all duration-300 cursor-pointer"
           >
             <i className="fab fa-telegram"></i>
           </a>
@@ -91,13 +90,14 @@ const Portfolio = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 md:ml-72 lg:ml-72 p-6">
+      <div className="flex-1 w-full md:ml-64 lg:ml-72 p-4 sm:p-6">
+
         {/* Navigation */}
-        <div className="mb-8 sticky top-0 z-10 bg-[#1f1f1f] py-4 border-b border-[#333333]">
-          <div className="flex space-x-4 md:space-x-6">
+        <div className="mb-8 sticky top-0 z-10 bg-[#1f1f1f] py-4 border-b border-[#333333] overflow-x-auto">
+          <div className="flex space-x-4 md:space-x-6 w-max min-w-full px-4 sm:px-0">
             <button
               onClick={() => setActiveTab("about")}
-              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer rounded-button ${
+              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                 activeTab === "about"
                   ? "text-indigo-400 border-b-2 border-indigo-400"
                   : "text-gray-400 hover:text-white"
@@ -107,7 +107,7 @@ const Portfolio = () => {
             </button>
             <button
               onClick={() => setActiveTab("resume")}
-              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer rounded-button ${
+              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                 activeTab === "resume"
                   ? "text-indigo-400 border-b-2 border-indigo-400"
                   : "text-gray-400 hover:text-white"
@@ -117,7 +117,7 @@ const Portfolio = () => {
             </button>
             <button
               onClick={() => setActiveTab("projects")}
-              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer rounded-button ${
+              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                 activeTab === "projects"
                   ? "text-indigo-400 border-b-2 border-indigo-400"
                   : "text-gray-400 hover:text-white"
@@ -127,7 +127,7 @@ const Portfolio = () => {
             </button>
             <button
               onClick={() => setActiveTab("github")}
-              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer rounded-button ${
+              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                 activeTab === "github"
                   ? "text-indigo-400 border-b-2 border-indigo-400"
                   : "text-gray-400 hover:text-white"
@@ -137,7 +137,7 @@ const Portfolio = () => {
             </button>
             <button
               onClick={() => setActiveTab("contact")}
-              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer rounded-button ${
+              className={`px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                 activeTab === "contact"
                   ? "text-indigo-400 border-b-2 border-indigo-400"
                   : "text-gray-400 hover:text-white"
@@ -147,18 +147,20 @@ const Portfolio = () => {
             </button>
           </div>
         </div>
+
         {renderContent()}
 
         <Footer />
       </div>
 
       {/* Floating Hire Me Button */}
-      <button className="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center transition-all duration-300 cursor-pointer rounded-button whitespace-nowrap">
+      <button className="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center transition-all duration-300 cursor-pointer">
         <i className="fas fa-paper-plane mr-2"></i>
         Hire Me
       </button>
     </div>
   );
+
 };
 
 export default Portfolio;
